@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Katik</h1>
+        <p>Hai Sobat! Selamat datang di Katik :]</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>  
+    </header>
+
+    
+    <button class="SegitigaBtn">Segitiga</button>
+        <div class="buttonSegitiga">
+            <button id="luasSegitigaBtn" class="hidden">Luas</button>
+            <button id="kelilingSegitigaBtn" class="hidden">Keliling</button>
+        </div>
+    
+        <form id="luasSegitigaForm" class="hidden">
+            <div class="luassegitiga">
+                <h1>Luas Segitiga</h1>
+                <img src="img/segitiga.png" alt="segitiga">
+
+                <p>Rumus Luas Segitiga yaitu:</p>
+                <img src="img/luasSegitiga.png" alt="LuasSegitiga">
+
+                <p>Di mana:</p>
+                <p>L = Luas</p>
+                <p>a = alas</p>
+                <p>t = tinggi</p>
+
+                <hr>
+
+                <p class="heading-judul">Hitung Luas Segitiga</p>
+
+                <table class="LuasSegitiga">
+                    <tr>
+                        <td>Alas</td>
+                        <td>:</td>
+                        <td><input type="number" name="alas1" id="alas1"></td>
+                    </tr>
+                    <tr>
+                        <td>Tinggi</td>
+                        <td>:</td>
+                        <td><input type="number" name="tinggi1" id="tinggi1"></td>
+                    </tr>
+                </table>
+
+                <p id="luas1"></p>
+                <button class="centered-button" type="button" onclick="hitungluasSegitiga()">Hitung</button>
+                <button class="reset-button" type="button" onclick="resetluasSegitiga()">Reset</button>
+            </div>
+        </form>
+    
+
+        <form id="kelilingSegitigaForm" class="hidden">
+            <div class="kelilingsegitiga">
+                <h1>Keliling Segitiga</h1>
+                <img src="img/segitiga.png" alt="segitiga">
+
+                <p>Rumus Keliling Segitiga yaitu:</p>
+                <img src="img/kelilingSegitiga.png" alt="KelilingSegitiga">
+
+                <p>Di mana:</p>
+                <p>K    = Keliling</p>
+                <p>S1   = Sisi A</p>
+                <p>S2   = Sisi B</p>
+                <p>S3   = Sisi C</p>
+
+                <hr>
+                <p class="heading-judul">Hitung Keliling Segitiga</p>
+
+                <table class="KelilingSegitiga">
+                    <tr>
+                        <td>S1</td>
+                        <td>:</td>
+                        <td><input type="number" name="s1" id="s1"></td>
+                    </tr>
+                    <tr>
+                        <td>S2</td>
+                        <td>:</td>
+                        <td><input type="number" name="s2" id="s2"></td>
+                    </tr>
+                    <tr>
+                        <td>S3</td>
+                        <td>:</td>
+                        <td><input type="number" name="s3" id="s3"></td>
+                    </tr>
+                </table>
+
+                <p id="keliling"></p>
+                <button class="centered-button" type="button" onclick="hitungkelilingSegitiga()">Hitung</button>
+                <button class="reset-button" type="button" onclick="resetkelilingSegitiga()">Reset</button>
+            </div>
+        </form>
+   
+    <button class="JajargenjangBtn">Jajargenjang</button>
+        <div class="buttonJajargenjang">
+            <button id="luasJajargenjangBtn" class="hidden">Luas</button>
+            <button id="kelilingJajargenjangBtn" class="hidden">Keliling</button>
+        </div>
+
+        <form id="luasJajargenjangForm" class="hidden">
+            <div class="luasjajargenjang">
+                <h1>Luas Jajargenjang</h1>
+                <img src="img/jajargenjang.png" alt="Jajargenjang">
+
+                <p>Rumus Luas Jajargenjang yaitu:</p>
+                <img src="img/luasJajargenjang.png" alt="Luas Jajargenjang">
+
+                <p>Di mana:</p>
+                <p>L = Luas</p>
+                <p>a = alas</p>
+                <p>t = tinggi</p>
+
+                <hr>
+
+                <p class="heading-judul">Hitung Luas Jajargenjang</p>
+
+                <table class="LuasJajargenjang">
+                    <tr>
+                        <td>Alas</td>
+                        <td>:</td>
+                        <td><input type="number" name="alas2" id="alas2"></td>
+                    </tr>
+                    <tr>
+                        <td>Tinggi</td>
+                        <td>:</td>
+                        <td><input type="number" name="tinggi2" id="tinggi2"></td>
+                    </tr>
+                </table>
+
+                <p id="luas2"></p>
+                <button class="centered-button" type="button" onclick="hitungluasJajargenjang()">Hitung</button>
+                <button class="reset-button" type="button" onclick="resetluasJajargenjang()">Reset</button>
+            </div>
+        </form>
+
+
+        <form id="kelilingJajargenjangForm" class="hidden">
+            <div class="kelilingJajargenjang">
+                <h1>Keliling Jajargenjang</h1>
+                <img src="img/jajargenjang.png" alt="Jajargenjang">
+
+                <p>Rumus Keliling Jajargenjang yaitu:</p>
+                <img src="img/kelilingJajargenjang.png" alt="Keliling Jajargenjang">
+
+                <p>Di mana:</p>
+                <p>a       = sisi atas dan bawah yang sejajar</p>
+                <p>b       = sisi kanan dan kiri yang sejajar</p>
+
+                <hr>
+                <p class="heading-judul">Hitung Keliling Jajargenjang</p>
+
+                <table class="KelilingJajargenjang">
+                    <tr>
+                        <td>a</td>
+                        <td>:</td>
+                        <td><input type="number" name="a" id="a"></td>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>:</td>
+                        <td><input type="number" name="b" id="b"></td>
+                    </tr>
+                </table>
+
+                <p id="keliling2"></p>
+                <button class="centered-button" type="button" onclick="hitungKelilingJajargenjang()">Hitung</button>
+                <button class="reset-button" type="button" onclick="resetKelilingJajargenjang()">Reset</button>
+            </div>
+        </form>
+
+
+    </button>
+</body>
+</html>
