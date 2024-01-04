@@ -49,16 +49,16 @@ function hitungkelilingSegitiga(){
     s1 = parseFloat(document.getElementById("s1").value);
     s2 = parseFloat(document.getElementById("s2").value);
     s3 = parseFloat(document.getElementById("s3").value);
-    if (alas1 == 0 || tinggi1 == 0){
+    if (isNaN(s1) || isNaN(s2) || isNaN(s3)) {
         window.alert("Masukkan nilai yang valid");
         return;
     }
-    keliling = s1 + s2 + s3;
-    document.getElementById("keliling").innerText = "Keliling = S1 + S2 + S3 " + "\nKeliling = " + s1 + " + " + s2 + " + " + s3 + "\n Keliling = " + keliling ;
+    keliling1 = s1 + s2 + s3;
+    document.getElementById("keliling1").innerText = "Keliling = S1 + S2 + S3 " + "\nKeliling = " + s1 + " + " + s2 + " + " + s3 + "\n Keliling = " + keliling1 ;
 }
 
 function resetkelilingSegitiga(){
-    if (document.getElementById("luas1").innerText == 0){
+    if (document.getElementById("keliling1").innerText == 0){
         window.alert("Lakukan perhitungan terlebih dahulu");
         return;
     }
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function(){
 function hitungluasJajargenjang(){
     alas2 = document.getElementById("alas2").value;
     tinggi2 = document.getElementById("tinggi2").value;
-    if (alas1 == 0 || tinggi1 == 0){
+    if (alas2 == 0 || tinggi2 == 0){
         window.alert("Masukkan nilai yang valid");
         return;
     }
@@ -106,7 +106,7 @@ function hitungluasJajargenjang(){
 }
 
 function resetluasJajargenjang(){
-    if (document.getElementById("luas1").innerText == 0){
+    if (document.getElementById("luas2").innerText == 0){
         window.alert("Lakukan perhitungan terlebih dahulu");
         return;
     }
@@ -118,7 +118,7 @@ function resetluasJajargenjang(){
 function hitungKelilingJajargenjang(){
     a = parseFloat(document.getElementById("a").value);
     b = parseFloat(document.getElementById("b").value);
-    if (alas1 == 0 || tinggi1 == 0){
+    if (isNaN(a) || isNaN(b)) {
         window.alert("Masukkan nilai yang valid");
         return;
     }
@@ -127,7 +127,7 @@ function hitungKelilingJajargenjang(){
 }
 
 function resetKelilingJajargenjang(){
-    if (document.getElementById("luas1").innerText == 0){
+    if (document.getElementById("keliling2").innerText == 0){
         window.alert("Lakukan perhitungan terlebih dahulu");
         return;
     }
