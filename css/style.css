@@ -9,6 +9,12 @@ body {
     background-size: cover;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: auto;
+    }
+}
+
 :root{
     --main-color: #2E4374;
     --second-color: #FFF5E0;
@@ -32,7 +38,7 @@ button{
     font-size: 28px;
     color: var(--second-color);
     border-radius: 5px;
-    width: 50%;
+    width: 75%;
     display: block;
     margin: 20px auto;
 }
@@ -40,7 +46,7 @@ button{
 .SegitigaBtn:hover{
     background: var(--second-color);
     color: var(--main-color);
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     transition: 0.2s;
 }
 
@@ -59,13 +65,13 @@ form{
 
 .buttonSegitiga button {
     flex: 5;
-    margin: 20px 80px;
+    margin: 20px 20px;
     background-color: var(--second-color);
     color: var(--main-color);
     font-size: 18px;
     border-color: var(--second-color);
     border-radius: 5px;
-    padding: 15px 15px;
+    padding: 15px 40px;
 }
 
 .buttonSegitiga button:hover{
@@ -191,7 +197,7 @@ table.KelilingSegitiga input {
     font-size: 28px;
     color: var(--second-color);
     border-radius: 5px;
-    width: 50%;
+    width: 75%;
     display: block;
     margin: 20px auto;
 }
@@ -199,7 +205,7 @@ table.KelilingSegitiga input {
 .JajargenjangBtn:hover{
     background: var(--second-color);
     color: var(--main-color);
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     transition: 0.2s;
 }
 
@@ -211,13 +217,13 @@ table.KelilingSegitiga input {
 
 .buttonJajargenjang button{
     flex: 5;
-    margin: 20px 80px;
+    margin: 20px 20px;
     background-color: var(--second-color);
     color: var(--main-color);
     font-size: 18px;
     border-color: var(--second-color);
     border-radius: 5px;
-    padding: 15px 15px;
+    padding: 15px 40px;
 }
 
 .buttonJajargenjang button:hover{
