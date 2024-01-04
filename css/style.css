@@ -104,7 +104,7 @@ table.LuasSegitiga input {
     margin: 4px 0; 
 }
 
-.centered-button{
+.centered-button {
     width: 20%;
     display: block;
     margin: 15px auto;
@@ -121,15 +121,15 @@ table.LuasSegitiga input {
     transition: 0.2s;
 }
 
-.reset-button{
-    width: 15%;
+.reset-button {
+    width: 20%;
     display: block;
-    margin: 100px 10px 30px auto;
+    margin: 80px 10px 20px auto;
     font-size: 15px;
     background-color: var(--second-color);
     color: var(--main-color);
-    padding: 10px 5px;
-    border-radius: 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
 }
 
 .reset-button:hover{
