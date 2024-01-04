@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: url('/LIBUR_SEM3/project_revou/img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
 :root{
     --main-color: #2E4374;
     --second-color: #FFF5E0;
@@ -27,6 +32,9 @@ button{
     font-size: 28px;
     color: var(--second-color);
     border-radius: 5px;
+    width: 50%;
+    display: block;
+    margin: 20px auto;
 }
 
 .SegitigaBtn:hover{
@@ -40,6 +48,7 @@ form{
     border: 2px solid var(--main-color);
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: rgb(252, 251, 243);
 }
 
 .buttonSegitiga{
@@ -50,11 +59,13 @@ form{
 
 .buttonSegitiga button {
     flex: 5;
-    margin: 20px 20px;
+    margin: 20px 80px;
     background-color: var(--second-color);
     color: var(--main-color);
-    font-size: 15px;
+    font-size: 18px;
     border-color: var(--second-color);
+    border-radius: 5px;
+    padding: 15px 15px;
 }
 
 .buttonSegitiga button:hover{
@@ -180,6 +191,9 @@ table.KelilingSegitiga input {
     font-size: 28px;
     color: var(--second-color);
     border-radius: 5px;
+    width: 50%;
+    display: block;
+    margin: 20px auto;
 }
 
 .JajargenjangBtn:hover{
@@ -197,11 +211,13 @@ table.KelilingSegitiga input {
 
 .buttonJajargenjang button{
     flex: 5;
-    margin: 20px 20px;
+    margin: 20px 80px;
     background-color: var(--second-color);
     color: var(--main-color);
-    font-size: 15px;
+    font-size: 18px;
     border-color: var(--second-color);
+    border-radius: 5px;
+    padding: 15px 15px;
 }
 
 .buttonJajargenjang button:hover{
